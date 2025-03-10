@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/Users/HP/Documents/C++/SlotMachine/private/combinations.cpp" "private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o" "gcc" "private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o.d"
   "/mnt/c/Users/HP/Documents/C++/SlotMachine/private/rng.cpp" "private/CMakeFiles/PrivateLibrary.dir/rng.cpp.o" "gcc" "private/CMakeFiles/PrivateLibrary.dir/rng.cpp.o.d"
   )
 

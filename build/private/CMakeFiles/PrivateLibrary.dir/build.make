@@ -83,17 +83,33 @@ private/CMakeFiles/PrivateLibrary.dir/rng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PrivateLibrary.dir/rng.cpp.s"
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/HP/Documents/C++/SlotMachine/private/rng.cpp -o CMakeFiles/PrivateLibrary.dir/rng.cpp.s
 
+private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o: private/CMakeFiles/PrivateLibrary.dir/flags.make
+private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o: ../private/combinations.cpp
+private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o: private/CMakeFiles/PrivateLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o -MF CMakeFiles/PrivateLibrary.dir/combinations.cpp.o.d -o CMakeFiles/PrivateLibrary.dir/combinations.cpp.o -c /mnt/c/Users/HP/Documents/C++/SlotMachine/private/combinations.cpp
+
+private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PrivateLibrary.dir/combinations.cpp.i"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/HP/Documents/C++/SlotMachine/private/combinations.cpp > CMakeFiles/PrivateLibrary.dir/combinations.cpp.i
+
+private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PrivateLibrary.dir/combinations.cpp.s"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/HP/Documents/C++/SlotMachine/private/combinations.cpp -o CMakeFiles/PrivateLibrary.dir/combinations.cpp.s
+
 # Object files for target PrivateLibrary
 PrivateLibrary_OBJECTS = \
-"CMakeFiles/PrivateLibrary.dir/rng.cpp.o"
+"CMakeFiles/PrivateLibrary.dir/rng.cpp.o" \
+"CMakeFiles/PrivateLibrary.dir/combinations.cpp.o"
 
 # External object files for target PrivateLibrary
 PrivateLibrary_EXTERNAL_OBJECTS =
 
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/rng.cpp.o
+private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/build.make
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPrivateLibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libPrivateLibrary.a"
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && $(CMAKE_COMMAND) -P CMakeFiles/PrivateLibrary.dir/cmake_clean_target.cmake
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PrivateLibrary.dir/link.txt --verbose=$(VERBOSE)
 

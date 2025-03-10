@@ -130,6 +130,30 @@ PrivateLibrary/fast:
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/build
 .PHONY : PrivateLibrary/fast
 
+combinations.o: combinations.cpp.o
+.PHONY : combinations.o
+
+# target to build an object file
+combinations.cpp.o:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o
+.PHONY : combinations.cpp.o
+
+combinations.i: combinations.cpp.i
+.PHONY : combinations.i
+
+# target to preprocess a source file
+combinations.cpp.i:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.i
+.PHONY : combinations.cpp.i
+
+combinations.s: combinations.cpp.s
+.PHONY : combinations.s
+
+# target to generate assembly for a file
+combinations.cpp.s:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.s
+.PHONY : combinations.cpp.s
+
 rng.o: rng.cpp.o
 .PHONY : rng.o
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PrivateLibrary"
+	@echo "... combinations.o"
+	@echo "... combinations.i"
+	@echo "... combinations.s"
 	@echo "... rng.o"
 	@echo "... rng.i"
 	@echo "... rng.s"

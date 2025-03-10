@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PrivateLibrary.dir/combinations.cpp.o"
+  "CMakeFiles/PrivateLibrary.dir/combinations.cpp.o.d"
   "CMakeFiles/PrivateLibrary.dir/rng.cpp.o"
   "CMakeFiles/PrivateLibrary.dir/rng.cpp.o.d"
   "libPrivateLibrary.a"

@@ -21,3 +21,5 @@
 #define x4003 STRAIGHTOFTHREE
 #define x4004 STRAIGHTOFFIVE
 
+#define x5000 EMPTY
+
