@@ -1,0 +1,6 @@
+/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles/slot.dir
+/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/HP/Documents/C++/SlotMachine/build/private/CMakeFiles/PrivateLibrary.dir
+/mnt/c/Users/HP/Documents/C++/SlotMachine/build/private/CMakeFiles/edit_cache.dir
+/mnt/c/Users/HP/Documents/C++/SlotMachine/build/private/CMakeFiles/rebuild_cache.dir

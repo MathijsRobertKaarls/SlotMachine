@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/slot.dir/main.cpp.o -o slot  private/libPrivateLibrary.a 

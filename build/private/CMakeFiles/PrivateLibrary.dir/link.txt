@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPrivateLibrary.a CMakeFiles/PrivateLibrary.dir/rng.cpp.o
+/usr/bin/ranlib libPrivateLibrary.a
