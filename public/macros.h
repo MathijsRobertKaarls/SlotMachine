@@ -23,3 +23,5 @@
 
 #define x5000 EMPTY
 
+#define EUR 100
+

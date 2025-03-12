@@ -1,84 +1,152 @@
 #include "combinations.h"
 
+#include <iostream>
+
 x0100<combs, 5> seek_combinations(x0100<x1001, x0005> x0200)
 {
-   std::array<int, 10> bitmask {0};
+    data_table dt;
+    dt.original = x0200;
 
-   for(int i = 0; i < 5; ++i)
-   {
-       bitmask[x0200[i]] += 1; 
-   }
+    for(int i = 0; i < 5; ++i)
+    {
+        dt.bitmask[x0200[i]] += 1;
+    }
 
-   std::array<combs, 5> res {x5000};
+    dt.vector.push_back(five_of_a_kind(dt));
+    dt.vector.push_back(three_of_a_kind(dt)); 
+    dt.vector.push_back(two_of_a_kind(dt));  
+    dt.vector.push_back(straight_of_five(dt)); 
+    dt.vector.push_back(straight_of_three(dt)); 
 
+    std::array<combs, 5> ca;
+    for(int i = 0 ; i < dt.vector.size(); ++i)
+    {
+        ca[i] = dt.vector[i].c;
+    }
 
-   if(five_of_a_kind(bitmask)) res[0] = x4002;  
-   if(three_of_a_kind(bitmask)) res[1] = x4001;
-   if(two_of_a_kind(bitmask)) res[2] = x4000; 
-   if(straight_of_five(bitmask)) res[3] = x4004;
-   if(straight_of_three(bitmask)) res[4] = x4003;
-
-   return res;
+    return ca;
 }
 
-bool two_of_a_kind(std::array<int, 10>& array)
+combs_order two_of_a_kind(data_table &dt)
 {
-    for(int i = 0; i < 10; ++i)
+    for(int i : dt.original)
     {
-        if(array[i] == 2)
+        if(i == 0)
         {
-            return true;
+            return combs_order{};
         }
     }
-    return false;
-}
 
-bool three_of_a_kind(std::array<int, 10>& array)
-{
     for(int i = 0; i < 10; ++i)
     {
-        if(array[i] == 3)
+        if(dt.bitmask[i] == 2)
         {
-            return true;
+            std::array<int, 5> arr {i};
+            return combs_order{x4000, arr};
         }
     }
-    return false;
+    return combs_order{};
 }
 
-bool five_of_a_kind(std::array<int, 10>& array)
+combs_order three_of_a_kind(data_table &dt)
 {
+    for(int i : dt.original)
+    {
+        if(i == 0)
+        {
+            return combs_order{};
+        }
+    }
+
     for(int i = 0; i < 10; ++i)
     {
-        if(array[i] == 5)
+        if(dt.bitmask[i] == 3)
         {
-            return true;
+            std::array<int, 5> arr {i};
+            return combs_order{x4001, arr};
         }
     }
-    return false;
+    return combs_order{};
 }
 
-bool straight_of_three(std::array<int, 10>& array)
+combs_order five_of_a_kind(data_table &dt)
 {
+    for(int i : dt.original)
+    {
+        if(i == 0)
+        {
+            return combs_order{};
+        }
+    }
+
+    for(int i = 0; i < 10; ++i)
+    {
+        if(dt.bitmask[i] == 5)
+        {
+            std::array<int, 5> arr {i};
+            return combs_order{x4002, arr};
+        }
+    }
+    return combs_order{};
+}
+
+combs_order straight_of_three(data_table &dt)
+{
+    for(int i : dt.original)
+    {
+        if(i == 0)
+        {
+            return combs_order{};
+        }
+    }
+    
+    bool b_straight_of_three = false;
     for(int i = 0; i < 8; ++i)
     {
-        if(array[i] == 1 && array[i + 1] == 1 && array[i + 2] == 1)
+        if(dt.bitmask[i] == 1 && dt.bitmask[i + 1] == 1 && dt.bitmask[i + 2] == 1)
         {
-            return true;
+            b_straight_of_three = true;
         }
     }
-    return false;
+
+    if(b_straight_of_three)
+    {
+        for(int i = 0; i < 3; ++i)
+        {
+            if(dt.original[i + 1] == dt.original[i] + 1 && dt.original[i + 2] == dt.original[i] + 2)
+            {    
+                return combs_order{x4003, dt.original};
+            }
+        }
+    }
+    return combs_order{};
 }
 
-bool straight_of_five(std::array<int, 10>& array)
+combs_order straight_of_five(data_table &dt)
 {
+    for(int i : dt.original)
+    {
+        if(i == 0)
+        {
+            return combs_order{};
+        }
+    }
+
+    bool b_straight_of_five = false;
     for(int i = 0; i < 6; ++i)
     {
-        if(array[i] == 1 && array[i + 1] == 1 && array[i + 2] == 1 && array[i + 3] == 1 && array[i + 4] == 1)
+        if(dt.bitmask[i] == 1 && dt.bitmask[i + 1] == 1 && dt.bitmask[i + 2] == 1 && dt.bitmask[i + 3] == 1 && dt.bitmask[i + 4] == 1)
         {
-            return true;
+            b_straight_of_five = true;
         }
     }
-    return false;
+
+    if(straight_of_five)
+    {
+        if(dt.original[0 + 1] == dt.original[0] + 1 && dt.original[0 + 2] == dt.original[0] + 2 && dt.original[0 + 3] == dt.original[0] + 3 && dt.original[0 + 4] == dt.original[0] + 4) 
+        {    
+            return combs_order{x4004, dt.original};
+        }
+    }
+    return combs_order{};
 }
-
-
