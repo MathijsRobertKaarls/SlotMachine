@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PrivateLibrary.dir/combinations.cpp.o.d"
   "CMakeFiles/PrivateLibrary.dir/rng.cpp.o"
   "CMakeFiles/PrivateLibrary.dir/rng.cpp.o.d"
+  "CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o"
+  "CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o.d"
   "libPrivateLibrary.a"
   "libPrivateLibrary.pdb"
 )

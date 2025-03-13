@@ -178,6 +178,30 @@ rng.cpp.s:
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/rng.cpp.s
 .PHONY : rng.cpp.s
 
+sminigames.o: sminigames.cpp.o
+.PHONY : sminigames.o
+
+# target to build an object file
+sminigames.cpp.o:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o
+.PHONY : sminigames.cpp.o
+
+sminigames.i: sminigames.cpp.i
+.PHONY : sminigames.i
+
+# target to preprocess a source file
+sminigames.cpp.i:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.i
+.PHONY : sminigames.cpp.i
+
+sminigames.s: sminigames.cpp.s
+.PHONY : sminigames.s
+
+# target to generate assembly for a file
+sminigames.cpp.s:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.s
+.PHONY : sminigames.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -193,6 +217,9 @@ help:
 	@echo "... rng.o"
 	@echo "... rng.i"
 	@echo "... rng.s"
+	@echo "... sminigames.o"
+	@echo "... sminigames.i"
+	@echo "... sminigames.s"
 .PHONY : help
 
 

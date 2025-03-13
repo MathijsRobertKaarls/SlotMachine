@@ -1,12 +1,18 @@
 
+#define x0000 0
 #define x0001 1
 #define x0002 2
 #define x0003 3
 #define x0004 4
 #define x0005 5
+#define x0030 30
+#define x0099 99
 
 #define x0100 std::array
+#define x0101 std::vector
 #define x0200 array
+#define x0400 values
+
 
 #define x1001 int
 #define x1002 float

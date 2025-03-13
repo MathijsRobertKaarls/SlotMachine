@@ -1,6 +1,8 @@
-CMakeFiles/slot.dir/main.cpp.o: \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
+private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o: \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/sminigames.cpp \
+ /usr/include/stdc-predef.h \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/sminigames.h \
+ /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -151,8 +153,8 @@ CMakeFiles/slot.dir/main.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/random \
- /usr/include/c++/12/cmath /usr/include/math.h \
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/array \
+ /usr/include/c++/12/random /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -185,8 +187,5 @@ CMakeFiles/slot.dir/main.cpp.o: \
  /usr/include/c++/12/bits/random.tcc /usr/include/c++/12/numeric \
  /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/array \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/rng.h \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/macros.h \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/combinations.h \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/sminigames.h
+ /usr/include/c++/12/pstl/execution_defs.h \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/macros.h

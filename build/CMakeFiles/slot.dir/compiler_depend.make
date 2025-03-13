@@ -234,7 +234,8 @@ CMakeFiles/slot.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/12/array \
   ../public/rng.h \
   ../public/macros.h \
-  ../public/combinations.h
+  ../public/combinations.h \
+  ../public/sminigames.h
 
 
 ../public/macros.h:
@@ -328,6 +329,8 @@ CMakeFiles/slot.dir/main.cpp.o: ../main.cpp \
 /usr/include/alloca.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+../public/sminigames.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-x0100<combs, 5> seek_combinations(x0100<x1001, x0005> x0200)
+x0100<payout_pattern, 5> seek_combinations(x0100<x1001, x0005> x0200)
 {
     data_table dt;
     dt.original = x0200;
@@ -18,22 +18,22 @@ x0100<combs, 5> seek_combinations(x0100<x1001, x0005> x0200)
     dt.vector.push_back(straight_of_five(dt)); 
     dt.vector.push_back(straight_of_three(dt)); 
 
-    std::array<combs, 5> ca;
+    std::array<payout_pattern, 5> pp;
     for(int i = 0 ; i < dt.vector.size(); ++i)
     {
-        ca[i] = dt.vector[i].c;
+        pp[i] = dt.vector[i].pp;
     }
 
-    return ca;
+    return pp;
 }
 
-combs_order two_of_a_kind(data_table &dt)
+pattern_order two_of_a_kind(data_table &dt)
 {
     for(int i : dt.original)
     {
         if(i == 0)
         {
-            return combs_order{};
+            return pattern_order{};
         }
     }
 
@@ -42,19 +42,19 @@ combs_order two_of_a_kind(data_table &dt)
         if(dt.bitmask[i] == 2)
         {
             std::array<int, 5> arr {i};
-            return combs_order{x4000, arr};
+            return pattern_order{x4000, arr};
         }
     }
-    return combs_order{};
+    return pattern_order{};
 }
 
-combs_order three_of_a_kind(data_table &dt)
+pattern_order three_of_a_kind(data_table &dt)
 {
     for(int i : dt.original)
     {
         if(i == 0)
         {
-            return combs_order{};
+            return pattern_order{};
         }
     }
 
@@ -63,19 +63,19 @@ combs_order three_of_a_kind(data_table &dt)
         if(dt.bitmask[i] == 3)
         {
             std::array<int, 5> arr {i};
-            return combs_order{x4001, arr};
+            return pattern_order{x4001, arr};
         }
     }
-    return combs_order{};
+    return pattern_order{};
 }
 
-combs_order five_of_a_kind(data_table &dt)
+pattern_order five_of_a_kind(data_table &dt)
 {
     for(int i : dt.original)
     {
         if(i == 0)
         {
-            return combs_order{};
+            return pattern_order{};
         }
     }
 
@@ -84,19 +84,19 @@ combs_order five_of_a_kind(data_table &dt)
         if(dt.bitmask[i] == 5)
         {
             std::array<int, 5> arr {i};
-            return combs_order{x4002, arr};
+            return pattern_order{x4002, arr};
         }
     }
-    return combs_order{};
+    return pattern_order{};
 }
 
-combs_order straight_of_three(data_table &dt)
+pattern_order straight_of_three(data_table &dt)
 {
     for(int i : dt.original)
     {
         if(i == 0)
         {
-            return combs_order{};
+            return pattern_order{};
         }
     }
     
@@ -115,20 +115,20 @@ combs_order straight_of_three(data_table &dt)
         {
             if(dt.original[i + 1] == dt.original[i] + 1 && dt.original[i + 2] == dt.original[i] + 2)
             {    
-                return combs_order{x4003, dt.original};
+                return pattern_order{x4003, dt.original};
             }
         }
     }
-    return combs_order{};
+    return pattern_order{};
 }
 
-combs_order straight_of_five(data_table &dt)
+pattern_order straight_of_five(data_table &dt)
 {
     for(int i : dt.original)
     {
         if(i == 0)
         {
-            return combs_order{};
+            return pattern_order{};
         }
     }
 
@@ -145,8 +145,8 @@ combs_order straight_of_five(data_table &dt)
     {
         if(dt.original[0 + 1] == dt.original[0] + 1 && dt.original[0 + 2] == dt.original[0] + 2 && dt.original[0 + 3] == dt.original[0] + 3 && dt.original[0 + 4] == dt.original[0] + 4) 
         {    
-            return combs_order{x4004, dt.original};
+            return pattern_order{x4004, dt.original};
         }
     }
-    return combs_order{};
+    return pattern_order{};
 }
