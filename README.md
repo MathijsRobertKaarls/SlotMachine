@@ -6,6 +6,8 @@
 
 ###
 
+<h2 align="left">Status : Developing</h2>
+
 <h2 align="left">Tactics used</h2>
 
 ###
