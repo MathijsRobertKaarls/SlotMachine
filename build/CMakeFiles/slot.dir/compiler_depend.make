@@ -232,15 +232,19 @@ CMakeFiles/slot.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/12/pstl/glue_numeric_defs.h \
   /usr/include/c++/12/pstl/execution_defs.h \
   /usr/include/c++/12/array \
-  ../public/rng.h \
+  ../public/account.h \
   ../public/macros.h \
+  ../public/rng.h \
   ../public/combinations.h \
-  ../public/sminigames.h
+  ../public/sminigames.h \
+  ../public/bminigames.h
 
+
+../public/rng.h:
 
 ../public/macros.h:
 
-../public/rng.h:
+../public/account.h:
 
 /usr/include/c++/12/array:
 
@@ -427,6 +431,8 @@ CMakeFiles/slot.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/12/numbers:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+../public/bminigames.h:
 
 /usr/include/c++/12/new:
 

@@ -1,7 +1,7 @@
-private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o: \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/sminigames.cpp \
+private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o: \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/bminigames.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/sminigames.h \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/bminigames.h \
  /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -153,11 +153,7 @@ private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/array \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/random \
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/random \
  /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -181,12 +177,16 @@ private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o: \
  /usr/include/c++/12/tr1/poly_hermite.tcc \
  /usr/include/c++/12/tr1/poly_laguerre.tcc \
  /usr/include/c++/12/tr1/riemann_zeta.tcc \
- /usr/include/c++/12/bits/random.h \
+ /usr/include/c++/12/bits/random.h /usr/include/c++/12/vector \
+ /usr/include/c++/12/bits/stl_uninitialized.h \
+ /usr/include/c++/12/bits/stl_vector.h \
+ /usr/include/c++/12/bits/stl_bvector.h \
+ /usr/include/c++/12/bits/vector.tcc \
  /usr/include/c++/12/bits/uniform_int_dist.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h \
  /usr/include/c++/12/bits/random.tcc /usr/include/c++/12/numeric \
  /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /usr/include/c++/12/pstl/execution_defs.h \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/macros.h \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/wheel.h
+ /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/array \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/wheel.h \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/macros.h

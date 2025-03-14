@@ -1,5 +1,7 @@
 #include "bminigames.h"
 
+#include "wheel.h"
+
 bminigames::bminigames(std::mt19937 &gen) : gen_(gen)
 {
 }
@@ -41,5 +43,7 @@ std::array<int, 3> bminigames::random_values()
 
 int bminigames::mega_wheel()
 {
-    return 0;
+    wheel awheel(MEGAWHEEL, gen_);
+    std::cout << "MEGA WHEEL: " << awheel.multiplier() << "\n";
+    return awheel.multiplier();
 }

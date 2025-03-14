@@ -5,6 +5,7 @@
 #define x0003 3
 #define x0004 4
 #define x0005 5
+#define x0010 10
 #define x0030 30
 #define x0099 99
 

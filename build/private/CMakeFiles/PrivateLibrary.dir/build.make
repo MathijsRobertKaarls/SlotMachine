@@ -111,11 +111,41 @@ private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PrivateLibrary.dir/sminigames.cpp.s"
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/HP/Documents/C++/SlotMachine/private/sminigames.cpp -o CMakeFiles/PrivateLibrary.dir/sminigames.cpp.s
 
+private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o: private/CMakeFiles/PrivateLibrary.dir/flags.make
+private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o: ../private/bminigames.cpp
+private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o: private/CMakeFiles/PrivateLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o -MF CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o.d -o CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o -c /mnt/c/Users/HP/Documents/C++/SlotMachine/private/bminigames.cpp
+
+private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PrivateLibrary.dir/bminigames.cpp.i"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/HP/Documents/C++/SlotMachine/private/bminigames.cpp > CMakeFiles/PrivateLibrary.dir/bminigames.cpp.i
+
+private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PrivateLibrary.dir/bminigames.cpp.s"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/HP/Documents/C++/SlotMachine/private/bminigames.cpp -o CMakeFiles/PrivateLibrary.dir/bminigames.cpp.s
+
+private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.o: private/CMakeFiles/PrivateLibrary.dir/flags.make
+private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.o: ../private/wheel.cpp
+private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.o: private/CMakeFiles/PrivateLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.o"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.o -MF CMakeFiles/PrivateLibrary.dir/wheel.cpp.o.d -o CMakeFiles/PrivateLibrary.dir/wheel.cpp.o -c /mnt/c/Users/HP/Documents/C++/SlotMachine/private/wheel.cpp
+
+private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PrivateLibrary.dir/wheel.cpp.i"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/HP/Documents/C++/SlotMachine/private/wheel.cpp > CMakeFiles/PrivateLibrary.dir/wheel.cpp.i
+
+private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PrivateLibrary.dir/wheel.cpp.s"
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/HP/Documents/C++/SlotMachine/private/wheel.cpp -o CMakeFiles/PrivateLibrary.dir/wheel.cpp.s
+
 # Object files for target PrivateLibrary
 PrivateLibrary_OBJECTS = \
 "CMakeFiles/PrivateLibrary.dir/rng.cpp.o" \
 "CMakeFiles/PrivateLibrary.dir/combinations.cpp.o" \
-"CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o"
+"CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o" \
+"CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o" \
+"CMakeFiles/PrivateLibrary.dir/wheel.cpp.o"
 
 # External object files for target PrivateLibrary
 PrivateLibrary_EXTERNAL_OBJECTS =
@@ -123,9 +153,11 @@ PrivateLibrary_EXTERNAL_OBJECTS =
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/rng.cpp.o
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/combinations.cpp.o
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.o
+private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o
+private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.o
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/build.make
 private/libPrivateLibrary.a: private/CMakeFiles/PrivateLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libPrivateLibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/HP/Documents/C++/SlotMachine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libPrivateLibrary.a"
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && $(CMAKE_COMMAND) -P CMakeFiles/PrivateLibrary.dir/cmake_clean_target.cmake
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build/private && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PrivateLibrary.dir/link.txt --verbose=$(VERBOSE)
 

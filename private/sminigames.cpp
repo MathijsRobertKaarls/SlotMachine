@@ -1,5 +1,7 @@
 #include "sminigames.h"
 
+#include "wheel.h"
+
 sminigames::sminigames(std::mt19937& gen) : gen_(gen)
 {
 }
@@ -27,7 +29,7 @@ const int sminigames::get_counter()
     return counter_;
 }
 
-const int sminigames::reset_counter()
+const void sminigames::reset_counter()
 {
     counter_ = x0030;
 }
@@ -65,16 +67,15 @@ int sminigames::choose_s_minigame()
             }
         }
     }
-
+    
     int res = get_random_outcome(values);
-    std::cout << res << "\n";
     if (res == 0)
     {
         return lucky_wheel();
     }
     if (res == 1)
     {  
-        return wheel();
+        return normal_wheel();
     }
     if (res == 2)
     {
@@ -106,20 +107,39 @@ int sminigames::get_random_outcome(std::array<int, 4> values)
 
 int sminigames::coinflip()
 {
-    return 0;
+    std::cout << "PLAYING COINFLIP..." << "\n";
+    if(std::uniform_int_distribution<int>(0,1)(gen_) == 0)
+    {
+        std::cout << "MULTIPLIER: " << 200 << "\n";
+        return 200;
+    }
+    else
+    {
+        std::cout << "MULTIPLIER: " << 1000 << "\n";
+        return 1000;
+    }
 }
 
 int sminigames::dices()
 {
-    return 0;
+    std::cout << "PLAYING DICES..." << "\n";
+    int dice_one = std::uniform_int_distribution<int>(1,6)(gen_);
+    int dice_two = std::uniform_int_distribution<int>(1,6)(gen_);
+    int multiplier = (dice_one * EUR) + (dice_two * EUR);
+    std::cout << "MULTIPLIER: " << multiplier << "\n";
+    return multiplier;
 }
 
-int sminigames::wheel()
+int sminigames::normal_wheel()
 {
-    return 0;
+    wheel awheel(WHEEL, gen_);
+    std::cout << "WHEEL: " << awheel.multiplier() << "\n";
+    return awheel.multiplier();
 }
 
 int sminigames::lucky_wheel()
 {
-    return 0;
+    wheel awheel(LUCKYWHEEL, gen_);
+    std::cout << "LUCKY WHEEL: " << awheel.multiplier() << "\n";
+    return awheel.multiplier();
 }

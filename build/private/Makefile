@@ -130,6 +130,30 @@ PrivateLibrary/fast:
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/build
 .PHONY : PrivateLibrary/fast
 
+bminigames.o: bminigames.cpp.o
+.PHONY : bminigames.o
+
+# target to build an object file
+bminigames.cpp.o:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.o
+.PHONY : bminigames.cpp.o
+
+bminigames.i: bminigames.cpp.i
+.PHONY : bminigames.i
+
+# target to preprocess a source file
+bminigames.cpp.i:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.i
+.PHONY : bminigames.cpp.i
+
+bminigames.s: bminigames.cpp.s
+.PHONY : bminigames.s
+
+# target to generate assembly for a file
+bminigames.cpp.s:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/bminigames.cpp.s
+.PHONY : bminigames.cpp.s
+
 combinations.o: combinations.cpp.o
 .PHONY : combinations.o
 
@@ -202,6 +226,30 @@ sminigames.cpp.s:
 	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/sminigames.cpp.s
 .PHONY : sminigames.cpp.s
 
+wheel.o: wheel.cpp.o
+.PHONY : wheel.o
+
+# target to build an object file
+wheel.cpp.o:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.o
+.PHONY : wheel.cpp.o
+
+wheel.i: wheel.cpp.i
+.PHONY : wheel.i
+
+# target to preprocess a source file
+wheel.cpp.i:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.i
+.PHONY : wheel.cpp.i
+
+wheel.s: wheel.cpp.s
+.PHONY : wheel.s
+
+# target to generate assembly for a file
+wheel.cpp.s:
+	cd /mnt/c/Users/HP/Documents/C++/SlotMachine/build && $(MAKE) $(MAKESILENT) -f private/CMakeFiles/PrivateLibrary.dir/build.make private/CMakeFiles/PrivateLibrary.dir/wheel.cpp.s
+.PHONY : wheel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,6 +259,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PrivateLibrary"
+	@echo "... bminigames.o"
+	@echo "... bminigames.i"
+	@echo "... bminigames.s"
 	@echo "... combinations.o"
 	@echo "... combinations.i"
 	@echo "... combinations.s"
@@ -220,6 +271,9 @@ help:
 	@echo "... sminigames.o"
 	@echo "... sminigames.i"
 	@echo "... sminigames.s"
+	@echo "... wheel.o"
+	@echo "... wheel.i"
+	@echo "... wheel.s"
 .PHONY : help
 
 

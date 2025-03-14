@@ -186,7 +186,9 @@ CMakeFiles/slot.dir/main.cpp.o: \
  /usr/include/c++/12/bits/stl_numeric.h /usr/include/c++/12/bit \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h /usr/include/c++/12/array \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/rng.h \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/account.h \
  /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/macros.h \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/rng.h \
  /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/combinations.h \
- /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/sminigames.h
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/sminigames.h \
+ /mnt/c/Users/HP/Documents/C++/SlotMachine/private/../public/bminigames.h

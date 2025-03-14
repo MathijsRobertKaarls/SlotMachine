@@ -1,6 +1,6 @@
 #include "rng.h"
 
-x0100<int, x0005> qgenerate_random_numbers(std::mt19937 &gen)
+x0100<int, x0005> generate_random_numbers(std::mt19937 &gen)
 {
     std::uniform_int_distribution<int> dist(0, 9);
     x0100<int, x0005> x0200;

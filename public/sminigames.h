@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <array>
+#include <vector>
 #include <random>
 
 #include "macros.h"
@@ -18,7 +19,7 @@ public:
     int play_s_minigame();
 
     const int get_counter();
-    const int reset_counter();
+    const void reset_counter();
 
 private:
 
@@ -30,9 +31,8 @@ private:
 
     int coinflip(); // coin flip with an 2x or 10x
     int dices(); // 2 dices = multiplier
-    int wheel(); // 17 wheel with 7 ones, 5 threes, 2 fives, 2 tens, 1 double
-    int lucky_wheel(); // 17 wheel with 7 ones, 5 fives, 2 tens, 1 twenty, 1 fifty, 1 double
-
+    int normal_wheel(); // 17 wheel with 5 ones, 5 threes, 3 fives, 2 tens, 2 twenty, 1 double
+    int lucky_wheel(); // 17 wheel with 5 ones, 5 fives, 3 tens, 1 twenty, 1 fifty, 1 hunderd, 1 double
 };
 
 #endif //SMINIGAMES_H
