@@ -1,20 +1,29 @@
-# A Slot Machine
+<h1 align="left">C++ Slot Machine</h1>
 
-**This is an public project where an basic template of an online slot machine is created.**
+###
 
-## Tactics used
+<p align="left">This is an public project where an basic template of an online slot machine is created.</p>
 
-* Random Generated Numbers
-* Hashed Functions
-* Secure Protocols
-* Code Obfuscation
-* Anti-Cheat Measures
-* Fair Payout Ratios
-* Optimization
+###
 
-## The Slot Machine includes
+<h2 align="left">Tactics used</h2>
 
-* Basic Bonus Rounds
-* Multipliers
-* Free Spins
-* Exponential Jackpot
+###
+
+<p align="left">Random Generated Numbers<br>Hashed Functions<br>Secure Protocols<br>Code Obfuscation<br>Anti-Cheat Measures<br>Fair Payout Ratios<br>Optimization</p>
+
+###
+
+<h2 align="left">Products</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" height="40" alt="cmake logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" height="40" alt="opengl logo"  />
+</div>
+
+###
