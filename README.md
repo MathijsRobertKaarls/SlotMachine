@@ -8,7 +8,7 @@
 
 <h2 align="left">Status</h2>
 
-<p1>&#x2022; Developing</p>
+<p1>&#x2022; Developing (HALTED)</p>
 
 <h2 align="left">Tactics used</h2>
 
